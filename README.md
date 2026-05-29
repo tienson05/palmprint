@@ -1,7 +1,15 @@
 # 🖐️ Palmprint Recognition
 
-Hệ thống nhận dạng lòng bàn tay (palmprint) sử dụng deep metric learning. Mô hình được xây dựng trên nền tảng ResNet tích hợp Squeeze-and-Excitation (SE) Block, huấn luyện bằng **ArcFace Loss** hoặc **Triplet Loss**, và đánh giá bằng các chỉ số sinh trắc học chuẩn (EER, ROC-AUC, FAR/FRR).
+Hệ thống nhận dạng lòng bàn tay (palmprint) sử dụng deep metric learning.
 
+Kiến trúc mô hình được tự triển khai lại bằng PyTorch dựa trên paper:
+
+> A Video-Based Mobile Palmprint Dataset and an Illumination-Robust Deep Learning Architecture for Unconstrained Environments  
+> https://www.mdpi.com/2076-3417/15/21/11368
+
+Do paper không cung cấp source code chính thức, toàn bộ kiến trúc mạng, pipeline huấn luyện và cơ chế embedding verification được xây dựng từ đầu và tối ưu lại thông qua nhiều thực nghiệm.
+
+Mô hình sử dụng backbone ResNet kết hợp Squeeze-and-Excitation (SE) Block, huấn luyện bằng **ArcFace Loss** hoặc **Triplet Loss**, và đánh giá bằng các chỉ số sinh trắc học chuẩn như **EER**, **ROC-AUC**, **FAR/FRR**.
 ---
 
 ## 📋 Mục lục
