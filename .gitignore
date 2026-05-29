@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env
+.venv/
+
+# PyCharm
+.idea/
+*.iml
+
+# Dataset
+data/*
+!data/.gitkeep
+
+# Model weights
+models/*
+!models/.gitkeep
+
+# Tensorboard
+runs/*
+!runs/.gitkeep
+
+# Results
+results/*
+!results/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
